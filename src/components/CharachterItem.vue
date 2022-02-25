@@ -6,14 +6,15 @@ const props = defineProps({
 </script>
 
 <template >
-	<div class=" rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
-		<RouterLink :to="{ name: 'charachterDetail', params: {id: item._id }}" class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white">
-        <img class="p-8 rounded-t-lg" :src="item.imageUrl" alt="product image" />
-    <div class="px-5 pb-5">
-        <a href="">
-            <h3 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white text-center">{{item.name}}</h3>
-        </a>
+
+<div class="max-w-sm  rounded-lg border shadow-md border-gray-700 m-auto py-5" style="background: #892CDC;">
+	<RouterLink :to="{ name: 'charachterDetail', params: {id: item._id }}">
+    <div class="flex flex-col items-center">
+        <img class="m-3 w-24 h-24 rounded-full shadow-lg" v-bind:src="item.imageUrl" :alt="item.name + ' image'"/>
+        <h3 class="mb-1 text-xl font-medium text-white">{{item.name}}</h3>
     </div>
 	</RouterLink>
 </div>
+
+
 </template>
