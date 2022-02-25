@@ -75,6 +75,7 @@ fetchData(1)
 				<button
 					class="inline-flex items-center py-2 px-4 text-sm font-medium text-white bg-gray-800 rounded-l hover:bg-gray-900 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
 					@click="fetchData(nextPage-2)"
+					v-if="nextPage-2 !== 0"
 				>
 					<svg
 						class="mr-2 w-5 h-5"
