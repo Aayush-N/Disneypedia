@@ -12,7 +12,7 @@ const router = createRouter({
     },
     {
       path: '/character/:id',
-      name: 'charachter-detail',
+      name: 'charachterDetail',
       component: CharacterDetail
     },
     {
