@@ -24,7 +24,7 @@ function lessThanThreeElements(){
 
 <template >
 	<div
-		class="w-10/12 text-center border-8 border-white rounded-lg shadow-md sm:p-8  m-auto mt-6" style="background: #6166B3"
+		class="w-10/12 text-center border-8 border-white rounded-lg shadow-md sm:p-8  m-auto mt-6 bg-gray-700"
 	>
 		<div v-if="!item" class="text-center">Loading...</div>
 		<div v-else class="py-8">
